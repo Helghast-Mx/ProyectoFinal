@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./sources/style/materialize.min.css">
+    <link rel="stylesheet" href="./sources/style/materialize.css">
+    <link rel="stylesheet" href="./sources/style/stilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <form id="contact_form" action="" method="post" name="contact_form">
+        <!-- <h1>Información de Alumno</h1>-->
+
+        <section>
+            <!-- <form action=""> -->
+
+            <section class="container">
+                <h3>Información Personal</h3>
+
+                <div class="row">
+                    <form class="col s12">
+
+                        <div class="input-field col s6">
+
+                            <i class="material-icons prefix">account_circle</i>
+                            <label for="icon_prefix">Nombre: </label>
+                            <input id="nombre" name="nombre" type="text" class="validate" required>
+
+                        </div>
+
+                        <div class="input-field col s6">
+
+                            <i class="material-icons prefix">contact_phone</i>
+                            <label for="icon_telephone">Telefono Personal: </label>
+                            <input id="telPerson" type="number" class="validate" required>
+
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+
+                                <i class="material-icons prefix">contact_phone</i>
+                                <input id="telOfi" type="number" class="validate" required>
+                                <label for="icon_telephone">Telefono Laboral: </label>
+
+                            </div>
+                            <div class="input-field col s6">
+
+
+                                <i class="material-icons prefix">email</i>
+                                <input id="emailPerson" type="email" class="validate" required>
+                                <label for="icon_telephone">E-Mail Personal</label>
+
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+
+                                <i class="material-icons prefix">email</i>
+                                <input id="emailOfi" type="email" class="validate" required>
+                                <label for="icon_telephone">E-Mail Laboral: </label>
+
+                            </div>
+                            <div class="input-field col s6">
+
+                                <i class="material-icons prefix">date_range</i>
+                                <input id="fechaCumpleaños" type="date" class="validate" required>
+                                <label for="icon_prefix">Fecha de Nacimiento: </label>
+
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+
+
+            </section>
+            <div class="posicion">
+
+                <button class="btn waves-effect waves-teal posicion" type="button" onclick="obtenerDatos()">
+                    Enviar
+                </button>
+
+                <button class="btn waves-effect waves-teal" type="button" onclick="getTablaDatos()">
+                    Solicitar datos
+                </button>
+            </div>
+
+
+        </section>
+
+        <table class="table" id="datosTable">
+            <thead>
+
+                <tr>
+
+
+
+                </tr>
+            </thead>
+
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+    </form>
+
+    <script>
+
+    </script>
+    <script src="./app.js"></script>
+    <script src="./sources/js/materialize.min.js"></script>
+</body>
+
+</html>
