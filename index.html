@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario</title>
-    <link rel="stylesheet" href="./sources/style/materialize.min.css">
+
     <link rel="stylesheet" href="./sources/style/materialize.css">
     <link rel="stylesheet" href="./sources/style/stilos.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -29,16 +29,16 @@
                         <div class="input-field col s6">
 
                             <i class="material-icons prefix">account_circle</i>
-                            <label for="icon_prefix">Nombre: </label>
                             <input id="nombre" name="nombre" type="text" class="validate" required>
+                            <label for="icon_prefix">Nombre: </label>
 
                         </div>
 
                         <div class="input-field col s6">
 
                             <i class="material-icons prefix">contact_phone</i>
-                            <label for="icon_telephone">Telefono Personal: </label>
                             <input id="telPerson" type="number" class="validate" required>
+                            <label for="icon_telephone">Telefono Personal: </label>
 
                         </div>
 
@@ -95,7 +95,7 @@
             </section>
             <div class="posicion">
 
-                <button class="btn waves-effect waves-teal posicion" type="button" onclick="obtenerDatos()">
+                <button class="btn waves-effect waves-teal posicion" type="button" onclick="guardarDatos()">
                     Enviar
                 </button>
 
@@ -125,6 +125,17 @@
         </table>
 
     </form>
+
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                </div>
+            </div>
+    </div>
+
 
     <script>
 
